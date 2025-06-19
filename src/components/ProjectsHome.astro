@@ -1,0 +1,36 @@
+---
+
+const Projects = [
+    {
+        title: "Sistema de gestion de trabajadores",
+        description: "Desarrollo de un sistema para la gestion de los trabajadores para una empresa de confeccion textil usando tecnologias como react, express, nestJS,MySQL y tailwindcss.",
+        link: "#"
+    }, 
+    {
+        title: "Landing page para una empresa consultora de servicios basicos",
+        description: "Desarrollo de una landing page para una empresa consultora de servicios basicos usando tecnologias como react, astro, tailwindcss",
+        link: "#"
+    }, 
+    {
+        title: "Sistema de gestion de inventario",
+        description: "Desarrollo de un sistema para la gestion de inventario de una empresa de venta de productos usando tecnologias como react, express, nestjs, mysqls y tailwindcss.",
+        link: "#"
+    }
+]
+
+
+---
+
+
+<section class="container mx-auto px-8 pb-15">
+    <h2 class="text-3xl text-gray-200 font-bold mb-6 text-center">Proyectos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+        {Projects.map((project) => (
+            <div class="bg-slate-900 p-10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl text-gray-200 font-semibold mb-2">{project.title}</h3>
+                <p class="text-gray-400 mb-4">{project.description}</p>
+                <a href={project.link} class="text-blue-500 hover:underline">Ver proyecto</a>
+            </div>
+        ))}
+    </div>    
+</section>

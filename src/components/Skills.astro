@@ -1,0 +1,82 @@
+---
+import FadeInLeft from "./animations/Fade-in-left.jsx"
+
+
+
+---
+
+
+<div class="container mx-auto md:py-8 lg:py-20 py-4 md:px-8 lg:px-12 px-4">
+
+    <div class=" pb-10">
+        <h2 class="text-3xl text-gray-200">Skills</h2>
+        <div class="mt-2">
+            <p>Estas son las habilidades y conocimientos que he adquirido a lo largo de mi carrera como desarrollador de software.</p>
+        </div>
+    </div>
+    
+    <FadeInLeft delay={0.2} className="fade-in-left grid grid-cols-1 lg:grid-cols-3 gap-8 py-4" client:visible>
+        <div class="container p-10 border-neutral-800 border-2 rounded-lg hover:bg-neutral-800 transition-colors">
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa fa-gears text-violet-500 text-2xl"></i>
+                <h3 class="text-xl text-gray-200">¿Que puedo realizar?</h3>
+            </div>
+            <p class=" mb-4">
+                Puedo desarrollar aplicaciones web completas, desde el frontend hasta el backend, utilizando tecnologías modernas y eficientes.
+            </p>
+            <div>
+                <ul class="list-disc pl-5 text-gray-200">
+                    <li>Desarrollo de aplicaciones web</li>
+                    <li>Integración de bases de datos</li>
+                    <li>Desarrollo de APIs RESTful</li>
+                    <li>Optimización de rendimiento</li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <div class="container p-10 border-neutral-800 border-2 rounded-lg hover:bg-neutral-800 transition-colors">
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa fa-layer-group text-violet-500 text-2xl"></i>
+                <h3 class="text-xl text-gray-200">Habilidades</h3>
+            </div>
+            <p class="mb-4">
+                Estas son las tecnologías que he usado para desarrollar diferentes proyectos eficientes y escalables
+            </p>
+            <div>
+                <ul class="list-disc pl-5 text-gray-200">
+                    <li>Front-end</li>
+                        <p class="text-gray-400">React, JavaScript, Tailwind CSS, Bootstrap, Astro</p>
+                    <li>Back-end</li>
+                        <p class="text-gray-400">Express.js, Node.js, Spring-Boot, TypeScript, Java, PHP, Laravel</p>
+                    <li>Bases de Datos</li>
+                        <p class="text-gray-400">MySQL, PostgreSQL, MariaDB, SQL Server</p>
+                    <li>Otros</li>
+                        <p class="text-gray-400">Git, Azure, APIs RESTful</p>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="container p-10 border-neutral-800 border-2 rounded-lg hover:bg-neutral-800 transition-colors">
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa fa-brain text-violet-500 text-2xl"></i>
+                <h3 class="text-gray-200 text-xl">Conocimientos</h3>
+            </div>
+            <p class="mb-4">
+                A lo largo de mi formación y experiencia, he adquirido conocimientos clave que me permiten abordar proyectos con un enfoque estructurado, orientado a la calidad y al trabajo colaborativo.
+            </p>
+            <div>
+                <ul class="list-disc pl-5 text-gray-200">
+                    <li>Programacion Orientada a Objetos (POO)</li>
+                    <li>Analisis de Requerimientos</li>
+                    <li>Trabajo en Equipo</li>
+                    <li>Patron MVC</li>
+                    <li>Patron Cliente-Servidor</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+   </FadeInLeft>
+</div>
+

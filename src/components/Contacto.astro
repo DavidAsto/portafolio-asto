@@ -1,0 +1,75 @@
+---
+
+---
+
+
+
+<section class="bg-black py-12">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-3xl font-extrabold text-gray-200 sm:text-4xl">
+        Contactate conmigo
+      </h2>
+      <p class="mt-4 text-lg leading-6 text-gray-400">
+        Si tienes alguna pregunta o quieres colaborar en un proyecto, no dudes en contactarme.
+      </p>
+    </div>
+    <div class="mt-10">
+      <form action="#" method="POST" class="mx-auto max-w-lg bg-gray-900 p-6 sm:p-8 rounded-xl border border-gray-700">
+        <div class="grid grid-cols-1 gap-y-6">
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-gray-200">Nombre completo</label>
+            <div class="mt-1">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                autocomplete="name"
+                placeholder="Ingresa tu nombre "
+                required
+                class="block w-full rounded-md border-gray-600 bg-gray-800 py-3 px-4 text-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-200">Correo electrónico</label>
+            <div class="mt-1">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Ingresa tu correo electrónico"
+                required
+                class="block w-full rounded-md border-gray-600 bg-gray-800 py-3 px-4 text-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label for="mensaje" class="block text-sm font-medium text-gray-200">Mensaje</label>
+            <div class="mt-1">
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="Escribe tu mensaje aquí"
+                required
+                class="block w-full rounded-md border-gray-600 bg-gray-800 py-3 px-4 text-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <button
+            type="submit"
+            class="flex w-full justify-center rounded-md border border-transparent bg-violet-600 py-3 px-4 text-base font-medium text-white shadow-sm cursor-pointer hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+          >
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
