@@ -4,8 +4,9 @@ import react, { useState, useEffect } from "react";
 
 
 
-const CursorAnimate = ( {targetSelector = ".banner-section", className= ''}) => {
+const CursorAnimate = ( {targetSelector = ".banner-section"}) => {
 
+  
     const [cursors, setCursors] = useState([]);
   const [isInTarget, setIsInTarget] = useState(false);
 
