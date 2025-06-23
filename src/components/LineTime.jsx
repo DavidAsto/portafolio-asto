@@ -16,7 +16,7 @@ const Estudios = [
 const LineTime = () => {
     return ( 
         <div className="grid grid-cols-1 md:grid-cols-2  container mx-auto my-10 ">
-            <div className="w-1/2 px-8 ">
+            <div className=" px-8 ">
                 <h3 className="text-gray-200 pl-3 text-3xl">Estudios</h3>
                 <div className="relative max-w-2xl pr-8 mt-6">
                 
@@ -46,7 +46,7 @@ const LineTime = () => {
                 </div>
             </div>
 
-            <div className="w-1/2 px-8">
+            <div className=" px-8">
 
                 <h3 className="text-gray-200 pl-3 text-3xl">Experiencia Laboral</h3>
                 

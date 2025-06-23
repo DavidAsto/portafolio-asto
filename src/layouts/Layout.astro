@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Header from '../components/Header.astro';
+import Header from '../components/Header.jsx'
 ---
 
 <!doctype html>
@@ -12,9 +12,10 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Portafolio Web - David Asto</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		
 	</head>
-	<body class="text-gray-400">
-		<Header />
+	<body class="text-gray-400 max-w-svw min-h-svh">
+		<Header client:load />
 		<slot />
 	</body>
 </html>
@@ -26,4 +27,9 @@ import Header from '../components/Header.astro';
 		box-sizing: border-box;
 		
 	}
+
+	
+	
+	
+	
 </style>
