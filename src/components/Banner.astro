@@ -3,10 +3,11 @@ import bannerBackground from '../assets/bg-banner.svg';
 import CursorAnimate from './animations/CursorAnimate';
 import EnterAnimation from './animations/EnterAnimation.jsx';
 
+
 ---
 
 <section class="banner-section flex items-center justify-center h-[870px] bg-cover bg-center p-4 " style={`background-image: url(${bannerBackground.src})`}> 
-    <CursorAnimate  client:load/>
+    <CursorAnimate  client:load/>   {/*FALTA SOLUCIONAR ESTO, SE DEBE QUITAR LA ANIMACION CUANDO SE ESTA EN UN DISPOSITIVO MOVIL */}
 
     <EnterAnimation delay={0.2} className="flex flex-col justify-center gap-3" client:load>
         
@@ -26,6 +27,7 @@ import EnterAnimation from './animations/EnterAnimation.jsx';
             <div class="flex items-center gap-x-5 text-xl text-gray-200 pl-1 ">
                 <a href="*" class="cursor-none"> <i  class="fab fa-github"></i></a>
                 <a href="*" class="cursor-none"> <i  class="fab fa-linkedin"></i></a>
+                <a href="/instagram" class="cursor-none"><i class="fab fa-instagram"></i> </a>
             </div>
         </div>
         
